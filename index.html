@@ -44,7 +44,13 @@
           radial-gradient(ellipse at 92% 18%, #e8dcffb8 0, #e8dcff00 38%),
           radial-gradient(ellipse at 78% 88%, #ffe5c8a6 0, #ffe5c800 34%),
           radial-gradient(ellipse at 22% 82%, #f5d5e8 0, #f5d5e800 42%),
-          linear-gradient(135deg, #fffaf4 0%, #fff0f3 34%, #f8efff 67%, #fff6ed 100%);
+          linear-gradient(
+            135deg,
+            #fffaf4 0%,
+            #fff0f3 34%,
+            #f8efff 67%,
+            #fff6ed 100%
+          );
         background-size: 140% 140%;
         animation: sakuraBackdrop 22s ease-in-out infinite alternate;
         position: relative;
@@ -52,8 +58,22 @@
       }
 
       @keyframes sakuraBackdrop {
-        0% { background-position: 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%; }
-        100% { background-position: 18% 12%, 82% 18%, 70% 82%, 15% 72%, 100% 50%; }
+        0% {
+          background-position:
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            0% 100%,
+            0% 50%;
+        }
+        100% {
+          background-position:
+            18% 12%,
+            82% 18%,
+            70% 82%,
+            15% 72%,
+            100% 50%;
+        }
       }
 
       button {
@@ -87,13 +107,23 @@
       }
 
       .glow.one {
-        background: radial-gradient(circle, #ffb8d2 0%, #ffd8e8 38%, #ffd8e800 72%);
+        background: radial-gradient(
+          circle,
+          #ffb8d2 0%,
+          #ffd8e8 38%,
+          #ffd8e800 72%
+        );
         left: -150px;
         top: -8%;
       }
 
       .glow.two {
-        background: radial-gradient(circle, #cfc0ff 0%, #eadfff 42%, #eadfff00 74%);
+        background: radial-gradient(
+          circle,
+          #cfc0ff 0%,
+          #eadfff 42%,
+          #eadfff00 74%
+        );
         right: -150px;
         bottom: -10%;
         animation-delay: -5s;
@@ -108,7 +138,6 @@
         }
       }
 
-
       /* Ranting sakura dekoratif di sudut layar agar latar terasa seperti taman bunga */
       #background-effects::before,
       #background-effects::after {
@@ -118,7 +147,7 @@
         height: min(43vw, 520px);
         background-repeat: no-repeat;
         background-size: contain;
-        opacity: .42;
+        opacity: 0.42;
         pointer-events: none;
         filter: drop-shadow(0 8px 16px #b96b8720);
       }
@@ -141,7 +170,7 @@
         #background-effects::after {
           width: 58vw;
           height: 58vw;
-          opacity: .28;
+          opacity: 0.28;
         }
       }
 
@@ -617,8 +646,6 @@
         animation: petalFall linear forwards;
       }
 
-
-
       /* EFEK TAMBAHAN: BUNGA SAKURA MELAYANG
          Tidak menggantikan efek kelopak dan partikel yang sudah ada. */
       .sakura-bloom {
@@ -637,23 +664,29 @@
       @keyframes sakuraDrift {
         0% {
           opacity: 0;
-          transform: translate3d(0, -4vh, 0) rotate(0deg) scale(.72);
+          transform: translate3d(0, -4vh, 0) rotate(0deg) scale(0.72);
         }
-        12% { opacity: var(--bloom-opacity, .72); }
+        12% {
+          opacity: var(--bloom-opacity, 0.72);
+        }
         50% {
           transform: translate3d(var(--bloom-sway, 35px), 48vh, 0)
             rotate(180deg) scale(1);
         }
-        88% { opacity: var(--bloom-opacity, .72); }
+        88% {
+          opacity: var(--bloom-opacity, 0.72);
+        }
         100% {
           opacity: 0;
           transform: translate3d(var(--bloom-end-sway, -20px), 108vh, 0)
-            rotate(360deg) scale(.82);
+            rotate(360deg) scale(0.82);
         }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        .sakura-bloom { animation-duration: 0.01ms !important; }
+        .sakura-bloom {
+          animation-duration: 0.01ms !important;
+        }
       }
 
       /* Tombol lanjut kuis terkunci */
@@ -1049,8 +1082,7 @@ Selamat ulang tahun, Sayangg. Semoga dunia lebih lembut kepadamu hari ini dan se
 
           createPetals(15);
         } else {
-          result.textContent =
-            "Hehehe, belum benar nih, Sayangg 🤍 Coba pilih jawaban yang lain yaa.";
+          result.textContent = "Tetotttt salahhh mwehehehe.";
 
           nextButton.disabled = true;
           nextButton.textContent = "Jawab dengan benar dulu 🤍";
@@ -1220,7 +1252,7 @@ Selamat ulang tahun, Sayangg. Semoga dunia lebih lembut kepadamu hari ini dan se
 
       function createSakuraBlooms(amount = 1) {
         const reducedMotion = window.matchMedia(
-          "(prefers-reduced-motion: reduce)"
+          "(prefers-reduced-motion: reduce)",
         ).matches;
         if (reducedMotion) return;
 
@@ -1234,10 +1266,19 @@ Selamat ulang tahun, Sayangg. Semoga dunia lebih lembut kepadamu hari ini dan se
           bloom.style.left = Math.random() * 100 + "vw";
           bloom.style.fontSize = 16 + Math.random() * 17 + "px";
           bloom.style.animationDuration = duration + "s";
-          bloom.style.animationDelay = (Math.random() * 1.8) + "s";
-          bloom.style.setProperty("--bloom-opacity", 0.42 + Math.random() * 0.38);
-          bloom.style.setProperty("--bloom-sway", (Math.random() * 90 - 45) + "px");
-          bloom.style.setProperty("--bloom-end-sway", (Math.random() * 100 - 50) + "px");
+          bloom.style.animationDelay = Math.random() * 1.8 + "s";
+          bloom.style.setProperty(
+            "--bloom-opacity",
+            0.42 + Math.random() * 0.38,
+          );
+          bloom.style.setProperty(
+            "--bloom-sway",
+            Math.random() * 90 - 45 + "px",
+          );
+          bloom.style.setProperty(
+            "--bloom-end-sway",
+            Math.random() * 100 - 50 + "px",
+          );
 
           document.body.appendChild(bloom);
           window.setTimeout(() => bloom.remove(), (duration + 2) * 1000);
@@ -1249,7 +1290,6 @@ Selamat ulang tahun, Sayangg. Semoga dunia lebih lembut kepadamu hari ini dan se
       window.setInterval(() => {
         if (!document.hidden) createSakuraBlooms(1);
       }, 2200);
-
 
       // =====================================
       // KILAUAN BACKGROUND
