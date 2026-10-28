@@ -1,0 +1,1284 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Sayangg 🤍</title>
+    <meta property="og:title" content="Happy Birthday, Sayangg 🤍" />
+    <meta
+      property="og:description"
+      content="Ada kejutan kecil buat kamu. Buka dan nyalakan suaranya yaa 🔊"
+    />
+    <meta name="theme-color" content="#fff9f8" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap");
+
+      :root {
+        --pink: #f5b9cb;
+        --pink-dark: #d9799d;
+        --cream: #fff9f8;
+        --text: #674d57;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        color: var(--text);
+        /* Latar sakura berlapis: ivory, blush, lavender, dan cahaya hangat.
+           Bukan warna pink polos; semua efek partikel lama tetap aktif. */
+        background:
+          radial-gradient(ellipse at 8% 12%, #ffd9e5 0, #ffd9e500 36%),
+          radial-gradient(ellipse at 92% 18%, #e8dcffb8 0, #e8dcff00 38%),
+          radial-gradient(ellipse at 78% 88%, #ffe5c8a6 0, #ffe5c800 34%),
+          radial-gradient(ellipse at 22% 82%, #f5d5e8 0, #f5d5e800 42%),
+          linear-gradient(135deg, #fffaf4 0%, #fff0f3 34%, #f8efff 67%, #fff6ed 100%);
+        background-size: 140% 140%;
+        animation: sakuraBackdrop 22s ease-in-out infinite alternate;
+        position: relative;
+        isolation: isolate;
+      }
+
+      @keyframes sakuraBackdrop {
+        0% { background-position: 0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%; }
+        100% { background-position: 18% 12%, 82% 18%, 70% 82%, 15% 72%, 100% 50%; }
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+      }
+
+      #background-effects {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .glow {
+        position: absolute;
+        width: min(42vw, 460px);
+        height: min(42vw, 460px);
+        border-radius: 50%;
+        filter: blur(75px);
+        opacity: 0.48;
+        animation: glowMove 13s ease-in-out infinite alternate;
+      }
+
+      .glow.one {
+        background: radial-gradient(circle, #ffb8d2 0%, #ffd8e8 38%, #ffd8e800 72%);
+        left: -150px;
+        top: -8%;
+      }
+
+      .glow.two {
+        background: radial-gradient(circle, #cfc0ff 0%, #eadfff 42%, #eadfff00 74%);
+        right: -150px;
+        bottom: -10%;
+        animation-delay: -5s;
+      }
+
+      @keyframes glowMove {
+        from {
+          transform: translate(0, 0) scale(0.9);
+        }
+        to {
+          transform: translate(50px, 30px) scale(1.2);
+        }
+      }
+
+
+      /* Ranting sakura dekoratif di sudut layar agar latar terasa seperti taman bunga */
+      #background-effects::before,
+      #background-effects::after {
+        content: "";
+        position: absolute;
+        width: min(43vw, 520px);
+        height: min(43vw, 520px);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .42;
+        pointer-events: none;
+        filter: drop-shadow(0 8px 16px #b96b8720);
+      }
+
+      #background-effects::before {
+        top: -5%;
+        left: -4%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cg fill='none' stroke='%238b5a60' stroke-width='7' stroke-linecap='round'%3E%3Cpath d='M-20 35 Q90 85 145 155 T265 235 M72 85 Q65 25 120 -5 M142 151 Q210 115 235 60 M207 204 Q285 185 330 120 M111 128 Q115 190 75 230'/%3E%3C/g%3E%3Cg fill='%23f6b9ce' stroke='%23fff0f5' stroke-width='3'%3E%3Cellipse cx='95' cy='45' rx='18' ry='30' transform='rotate(-35 95 45)'/%3E%3Cellipse cx='127' cy='47' rx='18' ry='30' transform='rotate(30 127 47)'/%3E%3Cellipse cx='111' cy='20' rx='18' ry='30'/%3E%3Cellipse cx='113' cy='63' rx='18' ry='30' transform='rotate(180 113 63)'/%3E%3Cellipse cx='253' cy='67' rx='17' ry='28' transform='rotate(20 253 67)'/%3E%3Cellipse cx='281' cy='78' rx='17' ry='28' transform='rotate(75 281 78)'/%3E%3Cellipse cx='268' cy='48' rx='17' ry='28' transform='rotate(5 268 48)'/%3E%3Cellipse cx='268' cy='91' rx='17' ry='28' transform='rotate(180 268 91)'/%3E%3Cellipse cx='75' cy='230' rx='17' ry='28' transform='rotate(-45 75 230)'/%3E%3Cellipse cx='103' cy='238' rx='17' ry='28' transform='rotate(40 103 238)'/%3E%3Cellipse cx='91' cy='210' rx='17' ry='28'/%3E%3Cellipse cx='91' cy='254' rx='17' ry='28' transform='rotate(180 91 254)'/%3E%3C/g%3E%3Cg fill='%23d99b58'%3E%3Ccircle cx='112' cy='45' r='7'/%3E%3Ccircle cx='268' cy='70' r='6'/%3E%3Ccircle cx='91' cy='232' r='6'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      #background-effects::after {
+        right: -5%;
+        bottom: -8%;
+        transform: rotate(180deg);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cg fill='none' stroke='%238b5a60' stroke-width='7' stroke-linecap='round'%3E%3Cpath d='M-20 35 Q90 85 145 155 T265 235 M72 85 Q65 25 120 -5 M142 151 Q210 115 235 60 M207 204 Q285 185 330 120 M111 128 Q115 190 75 230'/%3E%3C/g%3E%3Cg fill='%23f6b9ce' stroke='%23fff0f5' stroke-width='3'%3E%3Cellipse cx='95' cy='45' rx='18' ry='30' transform='rotate(-35 95 45)'/%3E%3Cellipse cx='127' cy='47' rx='18' ry='30' transform='rotate(30 127 47)'/%3E%3Cellipse cx='111' cy='20' rx='18' ry='30'/%3E%3Cellipse cx='113' cy='63' rx='18' ry='30' transform='rotate(180 113 63)'/%3E%3Cellipse cx='253' cy='67' rx='17' ry='28' transform='rotate(20 253 67)'/%3E%3Cellipse cx='281' cy='78' rx='17' ry='28' transform='rotate(75 281 78)'/%3E%3Cellipse cx='268' cy='48' rx='17' ry='28' transform='rotate(5 268 48)'/%3E%3Cellipse cx='268' cy='91' rx='17' ry='28' transform='rotate(180 268 91)'/%3E%3Cellipse cx='75' cy='230' rx='17' ry='28' transform='rotate(-45 75 230)'/%3E%3Cellipse cx='103' cy='238' rx='17' ry='28' transform='rotate(40 103 238)'/%3E%3Cellipse cx='91' cy='210' rx='17' ry='28'/%3E%3Cellipse cx='91' cy='254' rx='17' ry='28' transform='rotate(180 91 254)'/%3E%3C/g%3E%3Cg fill='%23d99b58'%3E%3Ccircle cx='112' cy='45' r='7'/%3E%3Ccircle cx='268' cy='70' r='6'/%3E%3Ccircle cx='91' cy='232' r='6'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      @media (max-width: 520px) {
+        #background-effects::before,
+        #background-effects::after {
+          width: 58vw;
+          height: 58vw;
+          opacity: .28;
+        }
+      }
+
+      .sparkle {
+        position: absolute;
+        color: #d9799d;
+        opacity: 0;
+        animation: sparkleFloat 5s ease-in-out infinite;
+      }
+
+      @keyframes sparkleFloat {
+        0%,
+        100% {
+          opacity: 0;
+          transform: translateY(10px) scale(0.7);
+        }
+        50% {
+          opacity: 0.7;
+          transform: translateY(-20px) scale(1.2);
+        }
+      }
+
+      /* SISTEM HALAMAN */
+      .screen {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        padding: 55px 20px 75px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        overscroll-behavior: contain;
+        text-align: center;
+        position: relative;
+        animation: screenIn 0.65s ease both;
+      }
+
+      .screen.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes screenIn {
+        from {
+          opacity: 0;
+          transform: scale(0.96) translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+
+      .hero {
+        background: transparent;
+      }
+
+      .eyebrow,
+      .section-label {
+        font-size: 10px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--pink-dark);
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(40px, 8vw, 76px);
+        line-height: 1.18;
+        margin-bottom: 18px;
+      }
+
+      .hero h1 span {
+        color: var(--pink-dark);
+        font-style: italic;
+      }
+
+      .subtitle {
+        max-width: 440px;
+        font-size: 14px;
+        line-height: 1.9;
+        color: #927783;
+        margin: 0 auto 25px;
+      }
+
+      .envelope {
+        border: 0;
+        background: transparent;
+        font-size: 85px;
+        margin: 15px 0 20px;
+        filter: drop-shadow(0 10px 14px #d9799d25);
+        animation: envelopeFloat 2.5s ease-in-out infinite;
+      }
+
+      @keyframes envelopeFloat {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-4deg);
+        }
+        50% {
+          transform: translateY(-13px) rotate(4deg);
+        }
+      }
+
+      .hint {
+        font-size: 12px;
+        color: #b27b91;
+        line-height: 1.8;
+      }
+
+      .button,
+      .next-page {
+        display: inline-block;
+        border: 0;
+        background: var(--pink-dark);
+        color: white;
+        border-radius: 30px;
+        padding: 13px 24px;
+        font-size: 13px;
+        margin: 12px 5px 0;
+        transition: 0.25s;
+        box-shadow: 0 6px 18px #d9799d35;
+      }
+
+      .button:hover,
+      .next-page:hover {
+        transform: translateY(-3px);
+        background: #c8668c;
+      }
+
+      .screen h2 {
+        font-size: clamp(30px, 6vw, 44px);
+        margin-bottom: 18px;
+      }
+
+      .content {
+        width: 100%;
+        max-width: 850px;
+        margin: auto;
+      }
+
+      .letter {
+        width: 100%;
+        max-width: 650px;
+        margin: 20px auto 0;
+        padding: clamp(22px, 5vw, 42px);
+        background: #ffffffed;
+        border: 1px solid #f5dce5;
+        border-radius: 18px;
+        box-shadow: 0 15px 50px #d9799d12;
+        text-align: left;
+        line-height: 1.9;
+        font-size: 14px;
+        white-space: pre-line;
+      }
+
+      .signature {
+        margin-top: 20px;
+        color: var(--pink-dark);
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 21px;
+      }
+
+      /* GALERI BENTUK HATI */
+      :root {
+        --heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29'%3E%3Cpath d='M16 28C16 28 1 18.5 1 9C1 4.2 4.8 1 9 1C12 1 14.7 2.6 16 5.2C17.3 2.6 20 1 23 1C27.2 1 31 4.2 31 9C31 18.5 16 28 16 28Z'/%3E%3C/svg%3E");
+      }
+
+      .heart {
+        -webkit-mask: var(--heart) center / 100% 100% no-repeat;
+        mask: var(--heart) center / 100% 100% no-repeat;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        width: 100%;
+        max-width: 520px;
+        margin: 14px auto;
+      }
+
+      .photo {
+        grid-column: span 2;
+        position: relative;
+        aspect-ratio: 32 / 29;
+        cursor: pointer;
+        filter: drop-shadow(0 6px 8px #d9799d40);
+        transition: transform 0.25s ease;
+      }
+
+      .photo:hover,
+      .photo:focus-visible {
+        transform: scale(1.12);
+        z-index: 3;
+        outline: none;
+      }
+
+      .photo .heart-border {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, #fff, #ffcfe0);
+      }
+
+      .photo .heart-fill {
+        position: absolute;
+        inset: 8% 8% 9%;
+        background: #fce9ef;
+      }
+
+      .photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* susunan hati: 2 + 4 + 3 + 1 foto */
+      .photo:nth-child(1) {
+        grid-area: 1 / 2 / auto / span 2;
+      }
+      .photo:nth-child(2) {
+        grid-area: 1 / 6 / auto / span 2;
+      }
+      .photo:nth-child(3) {
+        grid-area: 2 / 1 / auto / span 2;
+      }
+      .photo:nth-child(4) {
+        grid-area: 2 / 3 / auto / span 2;
+      }
+      .photo:nth-child(5) {
+        grid-area: 2 / 5 / auto / span 2;
+      }
+      .photo:nth-child(6) {
+        grid-area: 2 / 7 / auto / span 2;
+      }
+      .photo:nth-child(7) {
+        grid-area: 3 / 2 / auto / span 2;
+      }
+      .photo:nth-child(8) {
+        grid-area: 3 / 4 / auto / span 2;
+      }
+      .photo:nth-child(9) {
+        grid-area: 3 / 6 / auto / span 2;
+      }
+      .photo:nth-child(10) {
+        grid-area: 4 / 4 / auto / span 2;
+      }
+
+      .lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 40;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: #fff9f8f2;
+        cursor: pointer;
+      }
+
+      .lightbox.open {
+        display: flex;
+        animation: screenIn 0.4s ease both;
+      }
+
+      .lb-heart {
+        position: relative;
+        width: min(86vw, 440px, calc(62dvh * 1.1));
+        aspect-ratio: 32 / 29;
+        filter: drop-shadow(0 12px 24px #d9799d55);
+      }
+
+      .lightbox p {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 20px;
+        color: var(--pink-dark);
+      }
+
+      /* ALASAN */
+      .reasons {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 25px auto;
+        text-align: left;
+      }
+
+      .reason {
+        padding: 18px;
+        background: #ffffffed;
+        border: 1px solid #f3dce4;
+        border-radius: 13px;
+        font-size: 13px;
+        line-height: 1.7;
+        animation: screenIn 0.8s ease both;
+      }
+
+      .reason strong {
+        display: block;
+        color: var(--pink-dark);
+        margin-bottom: 5px;
+      }
+
+      /* KUIS */
+      .game-card {
+        width: 100%;
+        max-width: 470px;
+        margin: 20px auto;
+        padding: 25px;
+        background: white;
+        border: 1px solid #f3dce4;
+        border-radius: 18px;
+        box-shadow: 0 10px 35px #d9799d12;
+      }
+
+      .game-card p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .choices {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .choice {
+        background: #fff8fa;
+        color: var(--text);
+        border: 1px solid #f0d5df;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 13px;
+      }
+
+      .choice:hover {
+        background: #fce7ef;
+      }
+
+      .result {
+        margin-top: 18px;
+        color: var(--pink-dark);
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      /* LILIN DAN KEJUTAN */
+      .candle {
+        font-size: 90px;
+        margin: 15px 0;
+        cursor: pointer;
+        user-select: none;
+        transition: transform 0.3s;
+        animation: candleGlow 2s ease-in-out infinite;
+      }
+
+      .candle:hover {
+        transform: scale(1.08);
+      }
+
+      @keyframes candleGlow {
+        0%,
+        100% {
+          filter: drop-shadow(0 0 0 #ffc6dc);
+        }
+        50% {
+          filter: drop-shadow(0 0 18px #ffc6dc);
+        }
+      }
+
+      .final-message {
+        display: none;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 25px;
+        border-radius: 18px;
+        background: white;
+        border: 1px solid #f3dce4;
+        line-height: 1.9;
+        animation: screenIn 0.8s ease;
+      }
+
+      .page-counter {
+        position: fixed;
+        top: 17px;
+        right: 18px;
+        z-index: 20;
+        color: #b27b91;
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+
+      .music-button {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        z-index: 30;
+        background: white;
+        color: var(--pink-dark);
+        border: 1px solid #f3dce4;
+        border-radius: 30px;
+        padding: 11px 15px;
+        box-shadow: 0 4px 20px #674d5715;
+        font-size: 12px;
+      }
+
+      .petal {
+        position: fixed;
+        top: -25px;
+        z-index: 25;
+        pointer-events: none;
+        animation: petalFall linear forwards;
+      }
+
+      @keyframes petalFall {
+        to {
+          transform: translateY(110vh) rotate(600deg);
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .screen {
+          padding: 48px 18px 75px;
+        }
+
+        .reasons {
+          grid-template-columns: 1fr;
+        }
+
+        .letter {
+          font-size: 13px;
+        }
+
+        .hero h1 {
+          font-size: clamp(38px, 10vw, 56px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+
+      .balloon {
+        position: absolute;
+        bottom: -90px;
+        opacity: 0.8;
+        animation: balloonUp linear infinite;
+      }
+      @keyframes balloonUp {
+        to {
+          transform: translate(24px, -125vh) rotate(8deg);
+        }
+      }
+      .confetti {
+        position: fixed;
+        top: -14px;
+        z-index: 26;
+        width: 8px;
+        height: 14px;
+        pointer-events: none;
+        animation: petalFall linear forwards;
+      }
+
+
+
+      /* EFEK TAMBAHAN: BUNGA SAKURA MELAYANG
+         Tidak menggantikan efek kelopak dan partikel yang sudah ada. */
+      .sakura-bloom {
+        position: fixed;
+        top: -48px;
+        z-index: 1;
+        pointer-events: none;
+        user-select: none;
+        line-height: 1;
+        opacity: 0;
+        filter: drop-shadow(0 3px 7px #d9799d30);
+        animation: sakuraDrift linear forwards;
+        will-change: transform, opacity;
+      }
+
+      @keyframes sakuraDrift {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, -4vh, 0) rotate(0deg) scale(.72);
+        }
+        12% { opacity: var(--bloom-opacity, .72); }
+        50% {
+          transform: translate3d(var(--bloom-sway, 35px), 48vh, 0)
+            rotate(180deg) scale(1);
+        }
+        88% { opacity: var(--bloom-opacity, .72); }
+        100% {
+          opacity: 0;
+          transform: translate3d(var(--bloom-end-sway, -20px), 108vh, 0)
+            rotate(360deg) scale(.82);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .sakura-bloom { animation-duration: 0.01ms !important; }
+      }
+
+      /* Tombol lanjut kuis terkunci */
+      .next-page:disabled {
+        background: #d9c3cb;
+        color: #fff;
+        cursor: not-allowed;
+        opacity: 0.7;
+        box-shadow: none;
+        transform: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="background-effects" aria-hidden="true">
+      <div class="glow one"></div>
+      <div class="glow two"></div>
+    </div>
+
+    <!-- HALAMAN 1: PEMBUKA -->
+    <section class="screen hero active" id="page0">
+      <p class="eyebrow">a little surprise for you</p>
+      <h1>Happy Birthday,<br /><span>Sayangg 🤍</span></h1>
+      <p class="subtitle">
+        ada sesuatu yang aku siapkan khusus buat kamu. sederhana, tapi semoga
+        bisa bikin kamu tersenyum.
+      </p>
+
+      <button class="envelope" onclick="nextPage()" aria-label="Buka amplop">
+        💌
+      </button>
+
+      <p class="hint">
+        sentuh amplopnya untuk membuka kejutan<br />nyalakan suaranya yaa 🔊
+      </p>
+      <button class="button" onclick="nextPage()">Buka surat kecilku</button>
+    </section>
+
+    <!-- HALAMAN 2: SURAT -->
+    <section class="screen" id="page1">
+      <div class="content">
+        <p class="section-label">a letter for you</p>
+        <h2>Untuk Sayangg,</h2>
+        <article class="letter" id="letterText"></article>
+        <div class="signature">with love, selalu 🤍</div>
+        <button class="next-page" onclick="nextPage()">
+          Lihat kenangan kita →
+        </button>
+      </div>
+    </section>
+
+    <!-- HALAMAN 3: GALERI -->
+    <section class="screen" id="page2">
+      <div class="content">
+        <p class="section-label">little memories</p>
+        <h2>Pict of you</h2>
+        <p class="subtitle">Mwehehhe Cantikk bangett pacall aku nyakk 🤍</p>
+
+        <div class="gallery" id="gallery"></div>
+
+        <p class="hint">ketuk salah satu hati untuk melihat fotonya ♡</p>
+        <button class="next-page" onclick="nextPage()">
+          Lanjut, Sayangg →
+        </button>
+      </div>
+    </section>
+
+    <!-- HALAMAN 4: ALASAN -->
+    <section class="screen" id="page3">
+      <div class="content">
+        <p class="section-label">a few little things</p>
+        <h2>Hal yang aku suka dari kamu</h2>
+
+        <div class="reasons">
+          <div class="reason">
+            <strong>01 · Senyummu</strong>
+            Senyummnya memanjakann mata ygy ngebikin tercandu canduu eakk.
+          </div>
+          <div class="reason">
+            <strong>02 · Tengillnyaa</strong>
+            jadii akuu ndaa plengerr sendiriii mweheheh
+          </div>
+          <div class="reason">
+            <strong>03 · Kehadiranmu</strong>
+            makasii banyak yaa sayangg uda hadir di hidup akuuu
+          </div>
+          <div class="reason">
+            <strong>04 · Dirimu sendiri</strong>
+            akuu suka kamuu bukan karena harus sempurna, tapi karena kamu adalah
+            kamu eakkk slebeww anjay mabar
+          </div>
+        </div>
+
+        <button class="next-page" onclick="nextPage()">
+          Ada kuis buat kamu →
+        </button>
+      </div>
+    </section>
+
+    <!-- HALAMAN 5: KUIS -->
+    <section class="screen" id="page4">
+      <div class="content">
+        <p class="section-label">a tiny love quiz</p>
+        <h2>Quiz kecil buat kamu</h2>
+
+        <div class="game-card">
+          <p>
+            <strong
+              >Menurut kamu, apa yang paling aku harapkan buat kamu di hari
+              ulang tahunmu?</strong
+            >
+          </p>
+
+          <div class="choices">
+            <button class="choice" onclick="answerQuiz(0)">
+              A. Hadiah mahal
+            </button>
+            <button class="choice" onclick="answerQuiz(1)">
+              B. Kamu selalu jadi diri sendiri dan teruss tersenyumm
+            </button>
+            <button class="choice" onclick="answerQuiz(2)">
+              C. vd di update kayak dulu
+            </button>
+          </div>
+
+          <p class="result" id="quizResult" aria-live="polite"></p>
+        </div>
+
+        <button class="next-page" id="quizNext" onclick="nextPage()" disabled>
+          Jawab dengan benar dulu 🤍
+        </button>
+      </div>
+    </section>
+
+    <!-- HALAMAN 6: LILIN -->
+    <section class="screen" id="page5">
+      <div class="content">
+        <p class="section-label">make a wish</p>
+        <h2>Waktunya bikin harapan</h2>
+
+        <p class="subtitle">
+          pejamkan mata sebentar, buat satu harapan, lalu sentuh kuenya sayangg.
+        </p>
+
+        <div
+          class="candle"
+          id="candle"
+          onclick="blowCandle()"
+          role="button"
+          tabindex="0"
+        >
+          🎂
+        </div>
+
+        <p class="hint" id="candleHint">sentuh kue untuk meniup lilin 🤍</p>
+        <button class="button" onclick="showFinal()">
+          Buka kejutan terakhir
+        </button>
+      </div>
+    </section>
+
+    <!-- HALAMAN 7: KEJUTAN TERAKHIR -->
+    <section class="screen" id="page6">
+      <div class="content">
+        <p class="section-label">one last thing</p>
+
+        <div style="font-size: 60px; margin-bottom: 15px">💗</div>
+        <h2>Happy Birthday, Sayangg 🤍</h2>
+
+        <div class="final-message" id="finalMessage" style="display: block">
+          <p>
+            Semoga umur barumu dipenuhi kebahagiaan, kesehatan, ketenangan, dan
+            banyak alasan untuk tersenyum. Semoga hal-hal baik selalu menemukan
+            jalannya ke kamu.
+          </p>
+
+          <p style="margin-top: 15px">
+            Terima kasih sudah menjadi bagian dari cerita yang indah. Semoga
+            hari ini menjadi salah satu kenangan manis untukmu.
+          </p>
+
+          <p class="signature">you deserve all the good things ✨</p>
+        </div>
+
+        <p class="hint">dibuat dengan sepenuh hati · 29 Oktober 2026 🤍</p>
+        <button class="next-page" onclick="goToPage(0)">
+          Ulangi dari awal ↻
+        </button>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('open')">
+      <div class="lb-heart">
+        <div class="heart heart-border"></div>
+        <div class="heart heart-fill"><img id="lbImg" alt="" /></div>
+      </div>
+      <p id="lbCaption"></p>
+    </div>
+
+    <div class="page-counter" id="pageCounter">1 / 7</div>
+
+    <button class="music-button" onclick="toggleMusic()" id="musicButton">
+      ♫ Putar musik
+    </button>
+
+    <audio id="music" loop preload="auto">
+      <source src="Assets/music/lagu.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      // =====================================
+      // PERSONALISASI SURAT
+      // =====================================
+
+      const nama = "Sayangg";
+
+      const surat = `Hai ${nama} 🤍
+
+Selamat ulang tahun, yaa.
+
+Hari ini adalah hari spesial karena seseorang yang berharga sedang bertambah usia. Aku berharap kamu selalu diberi kesehatan, kebahagiaan, hati yang tenang, dan kekuatan untuk melewati setiap hal yang datang.
+
+Semoga semua impian yang sedang kamu perjuangkan perlahan menjadi nyata. Kalau suatu hari kamu merasa lelah, semoga kamu selalu punya alasan untuk kembali tersenyum dan percaya bahwa hal-hal baik masih menunggumu.
+
+Terima kasih sudah menjadi dirimu sendiri. Semoga hari ini dipenuhi hal-hal kecil yang membuatmu bahagia, dari pagi sampai kamu menutup mata nanti malam.
+
+Jangan lupa bahagia, jaga kesehatan, dan tetap jadi kamu yang aku kenal.
+
+Selamat ulang tahun, Sayangg. Semoga dunia lebih lembut kepadamu hari ini dan seterusnya. 🤍`;
+
+      let typingTimer = null;
+      let letterDone = false;
+
+      function typeLetter() {
+        const el = document.getElementById("letterText");
+        clearInterval(typingTimer);
+
+        if (
+          letterDone ||
+          matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          el.textContent = surat;
+          return;
+        }
+
+        const typed = document.createTextNode("");
+        const rest = document.createElement("span");
+        rest.style.visibility = "hidden";
+        rest.textContent = surat;
+        el.textContent = "";
+        el.append(typed, rest);
+
+        let i = 0;
+        typingTimer = setInterval(() => {
+          i += 2;
+          typed.data = surat.slice(0, i);
+          rest.textContent = surat.slice(i);
+          if (i >= surat.length) {
+            clearInterval(typingTimer);
+            el.textContent = surat;
+            letterDone = true;
+          }
+        }, 28);
+      }
+
+      // ketuk surat untuk langsung menampilkan semuanya
+      document.getElementById("letterText").addEventListener("click", () => {
+        clearInterval(typingTimer);
+        letterDone = true;
+        document.getElementById("letterText").textContent = surat;
+      });
+
+      // =====================================
+      // FOTO KENANGAN
+      // Lokasi aset dipertahankan
+      // =====================================
+
+      const fotoKenangan = [
+        { file: "1.jpg", caption: "pinkk lucukk ♡" },
+        { file: "2.jpg", caption: "yang inii kucinggg" },
+        { file: "3.jpg", caption: "ukhty ukhtyy" },
+        { file: "4.jpg", caption: "Inii si paling fav mwehehe" },
+        { file: "5.jpg", caption: "itemm itemm favvv" },
+        { file: "6.jpg", caption: "tomboy ceritanyaa " },
+        { file: "7.jpg", caption: "emm ini mommyy aww" },
+        { file: "8.jpg", caption: "baluu mandii nii" },
+        { file: "9.jpg", caption: "kaloo ini cantikk banettt" },
+        { file: "10.jpg", caption: "ini juga baru mandii mwehehh keknya" },
+      ];
+
+      const gallery = document.getElementById("gallery");
+
+      fotoKenangan.forEach((foto) => {
+        const frame = document.createElement("div");
+        frame.className = "photo";
+        frame.tabIndex = 0;
+        frame.setAttribute("role", "button");
+        frame.setAttribute("aria-label", foto.caption);
+
+        const border = document.createElement("div");
+        border.className = "heart heart-border";
+
+        const fill = document.createElement("div");
+        fill.className = "heart heart-fill";
+
+        const img = document.createElement("img");
+        img.src = "Assets/image/" + foto.file;
+        img.alt = foto.caption;
+        img.loading = "lazy";
+        img.onerror = function () {
+          this.style.opacity = 0;
+        };
+
+        fill.appendChild(img);
+        frame.append(border, fill);
+        gallery.appendChild(frame);
+
+        const open = () => {
+          document.getElementById("lbImg").src = img.src;
+          document.getElementById("lbCaption").textContent = foto.caption;
+          document.getElementById("lightbox").classList.add("open");
+          createPetals(10);
+        };
+
+        frame.addEventListener("click", open);
+        frame.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            open();
+          }
+        });
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape")
+          document.getElementById("lightbox").classList.remove("open");
+      });
+
+      // =====================================
+      // NAVIGASI HALAMAN: KLIK, BUKAN SCROLL
+      // =====================================
+
+      const pages = Array.from(document.querySelectorAll(".screen"));
+      let currentPage = 0;
+
+      function goToPage(index) {
+        if (index < 0 || index >= pages.length) return;
+
+        pages.forEach((page, i) => {
+          page.classList.toggle("active", i === index);
+
+          if (i === index) {
+            page.scrollTop = 0;
+          }
+        });
+
+        currentPage = index;
+
+        document.getElementById("pageCounter").textContent =
+          `${index + 1} / ${pages.length}`;
+
+        createPetals(12);
+        if (index === 1) typeLetter();
+      }
+
+      function nextPage() {
+        if (currentPage < pages.length - 1) {
+          goToPage(currentPage + 1);
+        }
+      }
+
+      function previousPage() {
+        if (currentPage > 0) {
+          goToPage(currentPage - 1);
+        }
+      }
+
+      // =====================================
+      // KUIS CINTA
+      // =====================================
+
+      function answerQuiz(choice) {
+        const result = document.getElementById("quizResult");
+        const nextButton = document.getElementById("quizNext");
+
+        if (choice === 1) {
+          result.textContent =
+            "Yess, benar! 🤍 Aku paling berharap kamu sehat, bahagia, dan dikelilingi hal-hal baik.";
+
+          nextButton.disabled = false;
+          nextButton.textContent = "Benar! Buat satu harapan →";
+
+          createPetals(15);
+        } else {
+          result.textContent =
+            "Hehehe, belum benar nih, Sayangg 🤍 Coba pilih jawaban yang lain yaa.";
+
+          nextButton.disabled = true;
+          nextButton.textContent = "Jawab dengan benar dulu 🤍";
+        }
+      }
+
+      // =====================================
+      // LILIN VIRTUAL
+      // =====================================
+
+      function blowCandle() {
+        document.getElementById("candle").textContent = "✨🤍✨";
+        document.getElementById("candleHint").textContent =
+          "semoga harapan baikmu satu per satu menjadi nyata 🤍";
+
+        createPetals(20);
+        confetti(70);
+      }
+
+      document.getElementById("candle").addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          blowCandle();
+        }
+      });
+
+      function showFinal() {
+        goToPage(6);
+        createPetals(30);
+        confetti(90);
+      }
+
+      // =====================================
+      // MUSIK
+      // =====================================
+
+      const music = document.getElementById("music");
+      const musicButton = document.getElementById("musicButton");
+
+      let musicStarted = false;
+
+      // Browser memblokir suara otomatis sebelum ada sentuhan pertama,
+      // jadi musik dicoba saat dibuka, lalu dimulai di sentuhan pertama.
+      async function startMusic(e) {
+        if (musicStarted) return;
+        if (e && e.target.closest && e.target.closest("#musicButton")) return;
+        try {
+          await music.play();
+          musicStarted = true;
+          musicButton.textContent = "♫ Jeda musik";
+        } catch (error) {}
+      }
+
+      startMusic();
+      ["click", "touchend", "keydown"].forEach((ev) =>
+        document.addEventListener(ev, startMusic),
+      );
+
+      async function toggleMusic() {
+        musicStarted = true;
+        if (music.paused) {
+          try {
+            await music.play();
+            musicButton.textContent = "♫ Jeda musik";
+          } catch (error) {
+            musicButton.textContent = "♫ Musik bermasalah";
+            alert("Periksa apakah Assets/music/lagu.mp3 tersedia.");
+          }
+        } else {
+          music.pause();
+          musicButton.textContent = "♫ Putar musik";
+        }
+      }
+
+      // =====================================
+      // BUNGA BERJATUHAN
+      // =====================================
+
+      function createPetals(amount) {
+        const symbols = ["🌸", "♡", "🌷", "✧"];
+
+        for (let i = 0; i < amount; i++) {
+          const petal = document.createElement("span");
+          petal.className = "petal";
+          petal.textContent =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+          petal.style.left = Math.random() * 100 + "vw";
+          petal.style.fontSize = 12 + Math.random() * 14 + "px";
+          petal.style.animationDuration = 3 + Math.random() * 4 + "s";
+          petal.style.opacity = 0.5 + Math.random() * 0.5;
+
+          document.body.appendChild(petal);
+
+          setTimeout(() => petal.remove(), 7500);
+        }
+      }
+
+      // =====================================
+      // KONFETI
+      // =====================================
+
+      function confetti(amount) {
+        const colors = ["#f5b9cb", "#d9799d", "#ffe3ec", "#e6d9ff", "#ffd6a5"];
+        for (let i = 0; i < amount; i++) {
+          const piece = document.createElement("span");
+          piece.className = "confetti";
+          piece.style.left = Math.random() * 100 + "vw";
+          piece.style.background = colors[i % colors.length];
+          piece.style.animationDuration = 2.5 + Math.random() * 3 + "s";
+          piece.style.animationDelay = Math.random() * 0.6 + "s";
+          document.body.appendChild(piece);
+          setTimeout(() => piece.remove(), 7000);
+        }
+      }
+
+      // =====================================
+      // GESER KIRI/KANAN UNTUK PINDAH HALAMAN
+      // =====================================
+
+      let touchX = 0;
+      let touchY = 0;
+
+      document.addEventListener(
+        "touchstart",
+        (e) => {
+          touchX = e.changedTouches[0].clientX;
+          touchY = e.changedTouches[0].clientY;
+        },
+        { passive: true },
+      );
+
+      document.addEventListener(
+        "touchend",
+        (e) => {
+          const dx = e.changedTouches[0].clientX - touchX;
+          const dy = e.changedTouches[0].clientY - touchY;
+          if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+
+          if (dx < 0) {
+            if (
+              currentPage === 4 &&
+              document.getElementById("quizNext").disabled
+            )
+              return;
+            nextPage();
+          } else {
+            previousPage();
+          }
+        },
+        { passive: true },
+      );
+
+      // =====================================
+      // PARTIKEL TERUS MENERUS DI SEMUA HALAMAN
+      // =====================================
+
+      createPetals(8);
+      setInterval(() => {
+        if (!document.hidden) createPetals(2);
+      }, 1500);
+
+      // =====================================
+      // EFEK TAMBAHAN: BUNGA SAKURA MELAYANG
+      // Efek kelopak, sparkle, dan balon yang lama tetap dipertahankan.
+      // =====================================
+
+      function createSakuraBlooms(amount = 1) {
+        const reducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        if (reducedMotion) return;
+
+        for (let i = 0; i < amount; i++) {
+          const bloom = document.createElement("span");
+          bloom.className = "sakura-bloom";
+          bloom.textContent = Math.random() > 0.18 ? "🌸" : "✿";
+          bloom.setAttribute("aria-hidden", "true");
+
+          const duration = 10 + Math.random() * 9;
+          bloom.style.left = Math.random() * 100 + "vw";
+          bloom.style.fontSize = 16 + Math.random() * 17 + "px";
+          bloom.style.animationDuration = duration + "s";
+          bloom.style.animationDelay = (Math.random() * 1.8) + "s";
+          bloom.style.setProperty("--bloom-opacity", 0.42 + Math.random() * 0.38);
+          bloom.style.setProperty("--bloom-sway", (Math.random() * 90 - 45) + "px");
+          bloom.style.setProperty("--bloom-end-sway", (Math.random() * 100 - 50) + "px");
+
+          document.body.appendChild(bloom);
+          window.setTimeout(() => bloom.remove(), (duration + 2) * 1000);
+        }
+      }
+
+      // Bunga sakura muncul perlahan sebagai lapisan tambahan.
+      createSakuraBlooms(3);
+      window.setInterval(() => {
+        if (!document.hidden) createSakuraBlooms(1);
+      }, 2200);
+
+
+      // =====================================
+      // KILAUAN BACKGROUND
+      // =====================================
+
+      const background = document.getElementById("background-effects");
+
+      ["🎈", "🎈", "🎀", "🎈", "🎈", "🎀"].forEach((symbol, i) => {
+        const balloon = document.createElement("span");
+        balloon.className = "balloon";
+        balloon.textContent = symbol;
+        balloon.style.left = 8 + i * 16 + "%";
+        balloon.style.fontSize = 30 + (i % 3) * 8 + "px";
+        balloon.style.animationDuration = 16 + i * 3 + "s";
+        balloon.style.animationDelay = -i * 4 + "s";
+        background.appendChild(balloon);
+      });
+
+      for (let i = 0; i < 36; i++) {
+        const sparkle = document.createElement("span");
+        sparkle.className = "sparkle";
+        sparkle.textContent = "✦";
+        sparkle.style.left = Math.random() * 100 + "%";
+        sparkle.style.top = Math.random() * 100 + "%";
+        sparkle.style.fontSize = 8 + Math.random() * 12 + "px";
+        sparkle.style.animationDelay = Math.random() * 5 + "s";
+        sparkle.style.animationDuration = 4 + Math.random() * 5 + "s";
+        background.appendChild(sparkle);
+      }
+    </script>
+  </body>
+</html>
